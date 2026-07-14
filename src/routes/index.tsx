@@ -300,10 +300,21 @@ function Index() {
         </div>
       </section>
 
-      <footer className="py-6 px-4 text-center text-xs text-muted-foreground border-t border-border">
+      <footer className="py-6 px-4 pb-24 md:pb-6 text-center text-xs text-muted-foreground border-t border-border">
         <p>© 2026 Mens Ascend. Todos os direitos reservados.</p>
         <p className="mt-1 max-w-2xl mx-auto">Este produto não é um medicamento e não se destina a diagnosticar, tratar ou curar qualquer doença. Resultados variam.</p>
       </footer>
+
+      {/* CTA fixo mobile */}
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-border px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
+        <a
+          href={CHECKOUT}
+          className="flex items-center justify-center gap-2 w-full bg-gradient-primary text-primary-foreground font-bold text-base px-4 py-3.5 rounded-xl shadow-cta active:scale-[0.98] transition-transform"
+        >
+          <Flame className="w-5 h-5" /> Comprar Agora
+          <ArrowRight className="w-5 h-5" />
+        </a>
+      </div>
     </div>
   );
 }
