@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { CheckCircle2 } from "lucide-react";
+import { Download } from "lucide-react";
 
 const names = [
-  "Ricardo, SP", "Marcos, RJ", "Paulo, MG", "André, RS", "Carlos, BA",
-  "Fernando, PR", "Rodrigo, SC", "Bruno, CE", "Diego, GO", "Lucas, PE",
+  "James, TX", "Michael, CA", "Robert, NY", "David, FL", "Christopher, IL",
+  "Daniel, WA", "Matthew, CO", "Andrew, GA", "Ryan, MA", "Kevin, PA",
 ];
 
 export function SocialProofToast() {
@@ -17,7 +17,7 @@ export function SocialProofToast() {
       setTimeout(() => setIdx((i) => (i + 1) % names.length), 5000);
     };
     const t1 = setTimeout(cycle, 3000);
-    const t2 = setInterval(cycle, 8000);
+    const t2 = setInterval(cycle, 9000);
     return () => { clearTimeout(t1); clearInterval(t2); };
   }, []);
 
@@ -27,13 +27,13 @@ export function SocialProofToast() {
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       }`}
     >
-      <div className="flex items-center gap-3 rounded-xl bg-white shadow-card border border-border p-3">
-        <div className="shrink-0 w-9 h-9 rounded-full bg-gradient-primary grid place-items-center">
-          <CheckCircle2 className="w-5 h-5 text-white" />
+      <div className="flex items-center gap-3 rounded-2xl bg-white shadow-card border border-border p-3">
+        <div className="shrink-0 w-9 h-9 rounded-full bg-primary/10 grid place-items-center">
+          <Download className="w-4 h-4 text-primary" />
         </div>
         <div className="min-w-0">
-          <p className="text-sm font-semibold text-foreground truncate">{names[idx]} comprou agora</p>
-          <p className="text-xs text-muted-foreground">há poucos segundos</p>
+          <p className="text-sm font-semibold text-foreground truncate">{names[idx]} just downloaded</p>
+          <p className="text-xs text-muted-foreground">a few seconds ago</p>
         </div>
       </div>
     </div>
