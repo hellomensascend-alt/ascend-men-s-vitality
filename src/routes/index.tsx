@@ -316,7 +316,7 @@ function Index() {
                     ))}
                   </ul>
                   <div className="mt-8">
-                    <CTA>Get Instant Access</CTA>
+                    <CTA>Get Instant Access — Only $39</CTA>
                   </div>
                 </div>
               </div>
