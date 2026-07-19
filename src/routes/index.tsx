@@ -273,6 +273,11 @@ function Index() {
         </div>
       </section>
 
+      {/* INSIDE THE GUIDE + BONUS PACKAGE */}
+      <InsideGuideSection />
+      <BonusPackageSection />
+
+
       {/* OFFER */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/50">
         <div className="mx-auto max-w-3xl">
