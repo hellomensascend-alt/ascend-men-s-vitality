@@ -83,7 +83,7 @@ function Index() {
               A modern educational guide for men 35–60 who want to build lasting energy, focus, and confidence — through the daily habits that actually work.
             </p>
             <div className="mt-7 md:mt-8">
-              <CTA>Download Instantly</CTA>
+              <CTA>Download Now — Only $39</CTA>
               <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
                 <Lock className="w-3.5 h-3.5" /> Secure checkout · Instant PDF delivery
               </p>
