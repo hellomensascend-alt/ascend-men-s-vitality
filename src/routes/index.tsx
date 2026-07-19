@@ -13,6 +13,7 @@ import lifeKitchen from "@/assets/lifestyle-kitchen.jpg";
 import lifeRead from "@/assets/lifestyle-read.jpg";
 import { CountdownBar } from "@/components/CountdownBar";
 import { SocialProofToast } from "@/components/SocialProofToast";
+import { InsideGuideSection, BonusPackageSection } from "@/components/BonusAndPreviewSections";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -82,7 +83,7 @@ function Index() {
               A modern educational guide for men 35–60 who want to build lasting energy, focus, and confidence — through the daily habits that actually work.
             </p>
             <div className="mt-7 md:mt-8">
-              <CTA>Download Instantly</CTA>
+              <CTA>Download Now — Only $39</CTA>
               <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
                 <Lock className="w-3.5 h-3.5" /> Secure checkout · Instant PDF delivery
               </p>
@@ -272,6 +273,11 @@ function Index() {
         </div>
       </section>
 
+      {/* INSIDE THE GUIDE + BONUS PACKAGE */}
+      <InsideGuideSection />
+      <BonusPackageSection />
+
+
       {/* OFFER */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/50">
         <div className="mx-auto max-w-3xl">
@@ -281,7 +287,7 @@ function Index() {
           </div>
           <div className="rounded-3xl overflow-hidden border border-border bg-white shadow-elev">
             <div className="bg-secondary text-white text-center py-3 font-semibold text-sm tracking-wide uppercase">
-              Launch Offer — 67% Off
+              Launch Offer — 68% Off
             </div>
             <div className="p-6 md:p-10">
               <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -289,9 +295,9 @@ function Index() {
                   <img src={heroEbook} alt="Complete package" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground line-through">Regular price $89</p>
+                  <p className="text-sm text-muted-foreground line-through">Total value $121</p>
                   <div className="mt-1 flex items-baseline gap-2">
-                    <span className="font-serif text-5xl md:text-6xl font-semibold text-secondary">$29</span>
+                    <span className="font-serif text-5xl md:text-6xl font-semibold text-secondary">$39</span>
                     <span className="text-lg text-muted-foreground">USD</span>
                   </div>
                   <p className="mt-1 text-sm text-muted-foreground">One-time payment · Lifetime access</p>
@@ -310,7 +316,7 @@ function Index() {
                     ))}
                   </ul>
                   <div className="mt-8">
-                    <CTA>Get Instant Access</CTA>
+                    <CTA>Get Instant Access — Only $39</CTA>
                   </div>
                 </div>
               </div>
@@ -360,7 +366,7 @@ function Index() {
             Join thousands of men rebuilding their energy, focus, and confidence — one intentional day at a time.
           </p>
           <div className="mt-8 flex justify-center">
-            <CTA>Access Your Digital Guide</CTA>
+            <CTA>Get Access — Only $39</CTA>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white/60">
             <span className="flex items-center gap-1.5"><Lock className="w-3.5 h-3.5" /> Secure Checkout</span>
@@ -412,7 +418,7 @@ function Index() {
           href={CHECKOUT}
           className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-semibold text-base px-4 py-3.5 rounded-full shadow-cta active:scale-[0.98] transition-transform"
         >
-          <Download className="w-5 h-5" /> Download Instantly
+          <Download className="w-5 h-5" /> Get It Now — $39
           <ArrowRight className="w-4 h-4 opacity-80" />
         </a>
       </div>
