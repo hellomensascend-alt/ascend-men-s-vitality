@@ -418,7 +418,7 @@ function Index() {
           href={CHECKOUT}
           className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-semibold text-base px-4 py-3.5 rounded-full shadow-cta active:scale-[0.98] transition-transform"
         >
-          <Download className="w-5 h-5" /> Download Instantly
+          <Download className="w-5 h-5" /> Get It Now — $39
           <ArrowRight className="w-4 h-4 opacity-80" />
         </a>
       </div>
