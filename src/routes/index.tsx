@@ -287,7 +287,7 @@ function Index() {
           </div>
           <div className="rounded-3xl overflow-hidden border border-border bg-white shadow-elev">
             <div className="bg-secondary text-white text-center py-3 font-semibold text-sm tracking-wide uppercase">
-              Launch Offer — 67% Off
+              Launch Offer — 68% Off
             </div>
             <div className="p-6 md:p-10">
               <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -295,9 +295,9 @@ function Index() {
                   <img src={heroEbook} alt="Complete package" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground line-through">Regular price $89</p>
+                  <p className="text-sm text-muted-foreground line-through">Total value $121</p>
                   <div className="mt-1 flex items-baseline gap-2">
-                    <span className="font-serif text-5xl md:text-6xl font-semibold text-secondary">$29</span>
+                    <span className="font-serif text-5xl md:text-6xl font-semibold text-secondary">$39</span>
                     <span className="text-lg text-muted-foreground">USD</span>
                   </div>
                   <p className="mt-1 text-sm text-muted-foreground">One-time payment · Lifetime access</p>
