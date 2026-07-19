@@ -366,7 +366,7 @@ function Index() {
             Join thousands of men rebuilding their energy, focus, and confidence — one intentional day at a time.
           </p>
           <div className="mt-8 flex justify-center">
-            <CTA>Access Your Digital Guide</CTA>
+            <CTA>Get Access — Only $39</CTA>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white/60">
             <span className="flex items-center gap-1.5"><Lock className="w-3.5 h-3.5" /> Secure Checkout</span>
