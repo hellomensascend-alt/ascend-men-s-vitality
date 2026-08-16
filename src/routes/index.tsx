@@ -14,6 +14,7 @@ import lifeRead from "@/assets/lifestyle-read.jpg";
 import { CountdownBar } from "@/components/CountdownBar";
 import { SocialProofToast } from "@/components/SocialProofToast";
 import { InsideGuideSection, BonusPackageSection } from "@/components/BonusAndPreviewSections";
+import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,7 +28,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const CHECKOUT = "https://pay.cakto.com.br/rrz5o26_967173";
+const CHECKOUT = STRIPE_CHECKOUT_URL;
 
 function CTA({ children = "Download Instantly", size = "lg", className = "" }: { children?: React.ReactNode; size?: "lg" | "md"; className?: string }) {
   const sizes = size === "lg"

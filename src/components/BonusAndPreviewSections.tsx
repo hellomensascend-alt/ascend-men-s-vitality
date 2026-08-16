@@ -1,6 +1,7 @@
 import { Book, Calendar, Stethoscope, CheckCircle2, Sparkles, type LucideIcon } from "lucide-react";
+import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 
-const CHECKOUT = "https://pay.cakto.com.br/rrz5o26_967173";
+const CHECKOUT = STRIPE_CHECKOUT_URL;
 const GOLD = "#A8874E";
 const NAVY = "#0B1F33";
 
