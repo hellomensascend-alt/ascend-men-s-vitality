@@ -63,13 +63,13 @@ function AccessPage() {
                 className="text-xs font-bold tracking-[0.2em] uppercase mb-3"
                 style={{ color: GOLD }}
               >
-                Welcome to Men Ascend
+                Payment Confirmed
               </p>
               <h1 className="font-serif text-3xl md:text-5xl font-semibold text-secondary leading-tight mb-5">
-                Your access is ready.
+                Welcome to Men Ascend
               </h1>
               <p className="text-base md:text-lg text-muted-foreground max-w-lg mx-auto leading-relaxed">
-                Your access to the Men's Performance Blueprint is ready. Click the button below to open your download folder.
+                Your access to the Men's Performance Blueprint is ready.
               </p>
 
               {/* Primary CTA */}
