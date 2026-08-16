@@ -59,12 +59,6 @@ function AccessPage() {
                 <CheckCircle className="w-10 h-10 text-primary" />
               </div>
 
-              <p
-                className="text-xs font-bold tracking-[0.2em] uppercase mb-3"
-                style={{ color: GOLD }}
-              >
-                Payment Confirmed
-              </p>
               <h1 className="font-serif text-3xl md:text-5xl font-semibold text-secondary leading-tight mb-5">
                 Welcome to Men Ascend
               </h1>
