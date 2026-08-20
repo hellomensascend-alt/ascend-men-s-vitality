@@ -1,4 +1,5 @@
-import { createFileRoute, useServerFn } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
 import { useQuery } from "@tanstack/react-query";
 import { CheckCircle, ArrowRight, Download, Shield, FileText, Mail, Loader2, Lock } from "lucide-react";
 import { getDeliveryLink } from "@/lib/access.functions";
