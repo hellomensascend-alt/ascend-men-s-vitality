@@ -8,6 +8,4 @@
 
 export const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/cNi7sK1xheOefXNeiqfbq00";
 
-// The ebook delivery URL is intentionally NOT stored here.
-// It lives only in the backend secret EBOOK_DOWNLOAD_URL and is returned
-// by the server after Stripe confirms the checkout session was paid.
+export const GOOGLE_DRIVE_URL = "https://drive.google.com/drive/folders/1QcTo0WGIE9-TA8dsKq-vNPSQPjOzsq25";
