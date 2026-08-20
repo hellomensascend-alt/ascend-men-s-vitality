@@ -8,4 +8,5 @@
 
 export const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/cNi7sK1xheOefXNeiqfbq00";
 
-export const GOOGLE_DRIVE_URL = "https://drive.google.com/drive/folders/1QcTo0WGIE9-TA8dsKq-vNPSQPjOzsq25";
+// The ebook delivery link is intentionally NOT here: it lives server-side only
+// in src/lib/delivery.server.ts and is released after Stripe payment verification.
