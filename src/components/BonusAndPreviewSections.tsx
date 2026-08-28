@@ -137,8 +137,8 @@ export function BonusPackageSection() {
           <BonusCard
             icon={Stethoscope}
             eyebrow="Bonus #2"
-            title="Doctor Consultation Guide"
-            description="Walk into your next appointment prepared — organize your symptoms, ask the right questions, and understand your options."
+            title="Wellness Conversation Guide"
+            description="Walk into your next check-up prepared — organize your notes and prepare thoughtful questions to discuss with a professional."
             value="$24"
           />
           <BonusCard
