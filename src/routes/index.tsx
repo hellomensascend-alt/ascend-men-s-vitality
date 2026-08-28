@@ -165,7 +165,7 @@ function Index() {
             <div className="mt-8 space-y-4">
               {[
                 { icon: Sunrise, t: "The Morning Framework", d: "How to design a first hour that sets the tone for energy and focus." },
-                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel circulation, testosterone-supporting hormones, and steady energy." },
+                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel circulation and steady, natural energy levels." },
                 { icon: Dumbbell, t: "Movement That Compounds", d: "Simple training patterns proven to build strength after 35." },
                 { icon: Brain, t: "Stress & Mental Clarity", d: "Evidence-based tools to calm the nervous system and sharpen decision-making." },
                 { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
