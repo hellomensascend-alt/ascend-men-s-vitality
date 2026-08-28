@@ -58,7 +58,7 @@ function BonusCard({
 
 export function InsideGuideSection() {
   const previews = [
-    { src: "/inside-guide-01.png", alt: "Chapter opener — Performance Anxiety, with pull quote" },
+    { src: "/inside-guide-01.png", alt: "Chapter opener — Performance Confidence, with pull quote" },
     { src: "/inside-guide-02.png", alt: "Myth vs. Fact and evidence-based action steps" },
     { src: "/inside-guide-03.png", alt: "Chapter opener with Science callout box" },
     { src: "/inside-guide-04.png", alt: "Myth vs. Fact and Key Takeaways, lifestyle chapter" },
@@ -131,14 +131,14 @@ export function BonusPackageSection() {
             icon={Calendar}
             eyebrow="Bonus #1"
             title="30-Day Performance Action Plan"
-            description="A day-by-day plan to build healthier habits, improve circulation, reduce performance anxiety, and grow long-term confidence."
+            description="A day-by-day plan to build healthier habits, improve circulation, ease everyday pressure, and grow long-term confidence."
             value="$29"
           />
           <BonusCard
             icon={Stethoscope}
             eyebrow="Bonus #2"
-            title="Doctor Consultation Guide"
-            description="Walk into your next appointment prepared — organize your symptoms, ask the right questions, and understand your options."
+            title="Wellness Conversation Guide"
+            description="Walk into your next check-up prepared — organize your notes and prepare thoughtful questions to discuss with a professional."
             value="$24"
           />
           <BonusCard

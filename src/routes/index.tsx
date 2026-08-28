@@ -11,8 +11,6 @@ import bonusesImg from "@/assets/bonuses.jpg";
 import lifeWalk from "@/assets/lifestyle-walk.jpg";
 import lifeKitchen from "@/assets/lifestyle-kitchen.jpg";
 import lifeRead from "@/assets/lifestyle-read.jpg";
-import { CountdownBar } from "@/components/CountdownBar";
-import { SocialProofToast } from "@/components/SocialProofToast";
 import { InsideGuideSection, BonusPackageSection } from "@/components/BonusAndPreviewSections";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 
@@ -65,9 +63,8 @@ function Nav() {
 function Index() {
   return (
     <div id="top" className="min-h-screen bg-background">
-      <CountdownBar />
       <Nav />
-      <SocialProofToast />
+
 
       {/* HERO */}
       <section className="relative overflow-hidden">
@@ -165,7 +162,7 @@ function Index() {
             <div className="mt-8 space-y-4">
               {[
                 { icon: Sunrise, t: "The Morning Framework", d: "How to design a first hour that sets the tone for energy and focus." },
-                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel circulation, testosterone-supporting hormones, and steady energy." },
+                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel circulation and steady, natural energy levels." },
                 { icon: Dumbbell, t: "Movement That Compounds", d: "Simple training patterns proven to build strength after 35." },
                 { icon: Brain, t: "Stress & Mental Clarity", d: "Evidence-based tools to calm the nervous system and sharpen decision-making." },
                 { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
@@ -216,17 +213,17 @@ function Index() {
       {/* TESTIMONIALS */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-secondary text-secondary-foreground">
         <div className="mx-auto max-w-5xl text-center">
-          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">Trusted by 12,000+ Readers</span>
+          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">What Readers Are Saying</span>
           <h2 className="mt-3 text-3xl md:text-5xl font-semibold leading-tight">
             "The most practical wellness guide I've read in a decade."
           </h2>
           <div className="mt-10 grid md:grid-cols-3 gap-5 text-left">
             {[
-              { n: "David M., 47 — Denver, CO", t: "I stopped chasing hacks. The morning framework alone brought my energy back within two weeks." },
-              { n: "Michael R., 52 — Austin, TX", t: "It reads like a well-designed magazine and hits like a coach. My sleep and focus are completely different." },
-              { n: "James P., 41 — Boston, MA", t: "Clear, honest, and beautifully made. It's the guide I wish someone had handed me at 35." },
+              { n: "Reader feedback", t: "I stopped chasing hacks. The morning framework is simple enough to actually follow." },
+              { n: "Reader feedback", t: "It reads like a well-designed magazine and hits like a coach." },
+              { n: "Reader feedback", t: "Clear, honest, and beautifully made. It's the guide I wish someone had handed me earlier." },
             ].map(({ n, t }) => (
-              <blockquote key={n} className="rounded-2xl bg-white/5 border border-white/10 p-6">
+              <blockquote key={t} className="rounded-2xl bg-white/5 border border-white/10 p-6">
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-primary text-primary" />)}
                 </div>
@@ -237,6 +234,7 @@ function Index() {
           </div>
         </div>
       </section>
+
 
       {/* BONUSES */}
       <section className="py-16 md:py-24 px-4 md:px-6">
