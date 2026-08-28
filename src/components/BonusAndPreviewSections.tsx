@@ -58,7 +58,7 @@ function BonusCard({
 
 export function InsideGuideSection() {
   const previews = [
-    { src: "/inside-guide-01.png", alt: "Chapter opener — Performance Anxiety, with pull quote" },
+    { src: "/inside-guide-01.png", alt: "Chapter opener — Performance Confidence, with pull quote" },
     { src: "/inside-guide-02.png", alt: "Myth vs. Fact and evidence-based action steps" },
     { src: "/inside-guide-03.png", alt: "Chapter opener with Science callout box" },
     { src: "/inside-guide-04.png", alt: "Myth vs. Fact and Key Takeaways, lifestyle chapter" },
