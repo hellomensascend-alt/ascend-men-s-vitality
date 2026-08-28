@@ -65,9 +65,8 @@ function Nav() {
 function Index() {
   return (
     <div id="top" className="min-h-screen bg-background">
-      <CountdownBar />
       <Nav />
-      <SocialProofToast />
+
 
       {/* HERO */}
       <section className="relative overflow-hidden">
