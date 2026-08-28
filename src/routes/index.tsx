@@ -11,8 +11,6 @@ import bonusesImg from "@/assets/bonuses.jpg";
 import lifeWalk from "@/assets/lifestyle-walk.jpg";
 import lifeKitchen from "@/assets/lifestyle-kitchen.jpg";
 import lifeRead from "@/assets/lifestyle-read.jpg";
-import { CountdownBar } from "@/components/CountdownBar";
-import { SocialProofToast } from "@/components/SocialProofToast";
 import { InsideGuideSection, BonusPackageSection } from "@/components/BonusAndPreviewSections";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 
