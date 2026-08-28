@@ -131,7 +131,7 @@ export function BonusPackageSection() {
             icon={Calendar}
             eyebrow="Bonus #1"
             title="30-Day Performance Action Plan"
-            description="A day-by-day plan to build healthier habits, improve circulation, reduce performance anxiety, and grow long-term confidence."
+            description="A day-by-day plan to build healthier habits, improve circulation, ease everyday pressure, and grow long-term confidence."
             value="$29"
           />
           <BonusCard
