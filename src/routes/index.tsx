@@ -89,7 +89,7 @@ function Index() {
               The Men's <em className="not-italic text-primary">Performance</em> Blueprint
             </h1>
             <p className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-              A modern educational guide for men 35–60 who want to build lasting energy, focus, and confidence — through the daily habits that actually work.
+              A modern educational guide for men 45–60 who want to build lasting energy, focus, and confidence — through the daily habits that actually work.
             </p>
             <div className="mt-7 md:mt-8">
               <CTA>Download Now — Only $39</CTA>
@@ -144,7 +144,7 @@ function Index() {
             For the man who's ready to feel like himself again.
           </h2>
           <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Between 35 and 60, life stacks up. Work, stress, sleep debt, and inconsistent habits quietly drain the energy, focus, and confidence that used to feel automatic. This guide gives you a clear framework to get them back — one intentional day at a time.
+            Between 45 and 60, life stacks up. Work, stress, sleep debt, and inconsistent habits quietly drain the energy, focus, and confidence that used to feel automatic. This guide gives you a clear framework to get them back — one intentional day at a time.
           </p>
         </div>
       </section>
@@ -173,11 +173,11 @@ function Index() {
             <div className="mt-8 space-y-4">
               {[
                 { icon: Sunrise, t: "The Morning Framework", d: "How to design a first hour that sets the tone for energy and focus." },
-                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel circulation and steady, natural energy levels." },
+                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel steady, natural energy levels throughout the day." },
                 { icon: Dumbbell, t: "Movement That Compounds", d: "Simple training patterns proven to build strength after 35." },
                 { icon: Brain, t: "Stress & Mental Clarity", d: "Evidence-based tools to calm the nervous system and sharpen decision-making." },
                 { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
-                { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and intimacy in your relationships." },
+                { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and connection in your relationships." },
               ].map(({ icon: I, t, d }) => (
                 <div key={t} className="flex gap-4 group">
                   <div className="shrink-0 w-11 h-11 rounded-xl bg-white border border-border grid place-items-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shadow-soft">
@@ -262,7 +262,7 @@ function Index() {
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { t: "The 30-Day Performance Challenge", d: "A day-by-day plan to reset your energy and focus." },
-              { t: "Foods That Improve Blood Flow", d: "A pocket guide to the foods proven to support circulation." },
+              { t: "Foods for All-Day Energy", d: "A pocket guide to the foods that support steady, natural energy." },
               { t: "The Morning Performance Routine", d: "A 20-minute ritual that primes body and mind." },
               { t: "The Performance Habit Tracker", d: "A printable tracker to keep your streak visible." },
               { t: "The Confidence Building Workbook", d: "Guided exercises to rebuild self-trust week by week." },
@@ -356,7 +356,7 @@ function Index() {
               { q: "Is this a physical product?", a: "No. Men Ascend is a 100% digital educational guide. You receive an instant PDF download after checkout — nothing ships to your home." },
               { q: "What format is the ebook?", a: "A high-quality PDF designed for comfortable reading on smartphone, tablet, laptop, or desktop. You can also print it if you prefer." },
               { q: "How quickly do I get access?", a: "Immediately. As soon as your payment is confirmed, your download links are delivered to your email." },
-              { q: "Who is this guide for?", a: "It's written specifically for men between 35 and 60 who want a clear, sustainable framework for wellness, energy, and confidence." },
+              { q: "Who is this guide for?", a: "It's written specifically for men between 45 and 60 who want a clear, sustainable framework for wellness, energy, and confidence." },
               { q: "Is this a medical treatment?", a: "No. This is an educational guide for informational purposes only. It is not intended to diagnose, treat, cure, or prevent any disease." },
               { q: "What if I don't find it useful?", a: "You're covered by our 30-day satisfaction guarantee. Email support within 30 days for a full refund." },
               { q: "Can I read it on my phone?", a: "Yes. The PDF is optimized for mobile, tablet, and desktop." },
