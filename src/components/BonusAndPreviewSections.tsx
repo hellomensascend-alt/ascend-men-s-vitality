@@ -64,7 +64,7 @@ export function InsideGuideSection() {
     { src: "/inside-guide-04.png", alt: "Myth vs. Fact and Key Takeaways, lifestyle chapter" },
     { src: "/inside-guide-05.png", alt: "Chapter opener — Self-Esteem and Masculinity, with pull quote" },
     { src: "/inside-guide-06.png", alt: "Myth vs. Fact and Common Pitfalls & Action Steps" },
-    { src: "/inside-guide-07.png", alt: "Clinical Insight callout on treatment options" },
+    { src: "/inside-guide-07.png", alt: "Practical insight callout with key takeaways" },
   ];
 
   return (
@@ -131,14 +131,14 @@ export function BonusPackageSection() {
             icon={Calendar}
             eyebrow="Bonus #1"
             title="30-Day Performance Action Plan"
-            description="A day-by-day plan to build healthier habits, improve circulation, ease everyday pressure, and grow long-term confidence."
+            description="A day-by-day plan to build healthier habits, boost daily energy, ease everyday stress, and grow long-term confidence."
             value="$29"
           />
           <BonusCard
             icon={Stethoscope}
             eyebrow="Bonus #2"
-            title="Wellness Conversation Guide"
-            description="Walk into your next check-up prepared — organize your notes and prepare thoughtful questions to discuss with a professional."
+            title="Personal Growth Journal"
+            description="A guided journal to organize your thoughts, track your progress, and set clear intentions for the month ahead."
             value="$24"
           />
           <BonusCard
