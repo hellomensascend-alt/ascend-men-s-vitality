@@ -17,10 +17,21 @@ import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Men Ascend — The Men's Performance Blueprint" },
-      { name: "description", content: "A premium digital ebook for men 35–60. Instant PDF download. Build strength, vitality, and confidence through science-backed daily habits." },
-      { property: "og:title", content: "Men Ascend — The Men's Performance Blueprint" },
-      { property: "og:description", content: "Premium digital ebook. Instant PDF download. An educational guide for modern men's wellness." },
+      { title: "MEN ASCEND — The Man You Were Meant to Be" },
+      { name: "description", content: "MEN ASCEND is a practical guide for men who want to build greater confidence, energy, discipline and personal performance at every stage of life." },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "MEN ASCEND — The Man You Were Meant to Be" },
+      { property: "og:description", content: "MEN ASCEND is a practical guide for men who want to build greater confidence, energy, discipline and personal performance at every stage of life." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://peak-man-flow.lovable.app/" },
+      { property: "og:image", content: "https://peak-man-flow.lovable.app/og-image.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "MEN ASCEND — The Man You Were Meant to Be" },
+      { name: "twitter:description", content: "MEN ASCEND is a practical guide for men who want to build greater confidence, energy, discipline and personal performance at every stage of life." },
+      { name: "twitter:image", content: "https://peak-man-flow.lovable.app/og-image.jpg" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://peak-man-flow.lovable.app/" },
     ],
   }),
   component: Index,

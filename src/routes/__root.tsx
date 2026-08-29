@@ -77,12 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Men Ascend — The Men's Performance Blueprint" },
-      { name: "description", content: "A premium digital ebook for men 35–60 who want to build strength, vitality, and confidence through healthy daily habits." },
       { name: "author", content: "Men Ascend" },
-      { property: "og:title", content: "Men Ascend — The Men's Performance Blueprint" },
-      { property: "og:description", content: "Premium digital ebook. Instant PDF download. Educational guide for modern men's wellness." },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Men Ascend" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -90,7 +87,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
