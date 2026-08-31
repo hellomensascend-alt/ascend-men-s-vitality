@@ -145,13 +145,25 @@ function Index() {
         <div className="mx-auto max-w-4xl text-center">
           <span className="text-primary text-xs md:text-sm font-semibold uppercase tracking-[0.2em]">Who It's For</span>
           <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">
-            For the man who's ready to feel like himself again.
+            For the man who's ready to feel like himself again — in every part of life, including intimacy.
           </h2>
-          <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Between 45 and 60, life stacks up. Work, stress, sleep debt, and inconsistent habits quietly drain the energy, focus, and confidence that used to feel automatic. This guide gives you a clear framework to get them back — one intentional day at a time.
-          </p>
+          <div className="mt-5 space-y-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p>
+              Between 45 and 60, life can start to feel different. Work, stress, poor sleep, inconsistent routines, and years of putting yourself last can gradually affect your energy, focus, confidence, and sense of connection.
+            </p>
+            <p>
+              The Men's Performance Blueprint was created as an educational roadmap for men who want to take a more intentional approach to their everyday habits, personal confidence, and intimate life.
+            </p>
+            <p>
+              Inside, you'll explore practical lifestyle principles designed to help you understand the connection between daily routines, overall well-being, confidence, and intimacy — without complicated routines or unrealistic promises.
+            </p>
+            <p>
+              This is about building better habits, understanding your body and lifestyle, and becoming more intentional about the man you want to be.
+            </p>
+          </div>
         </div>
       </section>
+
 
       {/* INSIDE THE EBOOK */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/40">
