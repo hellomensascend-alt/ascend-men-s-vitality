@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   Download, Shield, Lock, Star, ChevronDown, ArrowRight,
   FileText, Smartphone, Tablet, Laptop, Check, BookOpen,
-  Sunrise, Utensils, Brain, Moon, Dumbbell, HeartPulse,
+  Sunrise, Utensils, Brain, Moon, Dumbbell, HeartPulse, Flame,
 } from "lucide-react";
 import { useState } from "react";
 import heroEbook from "@/assets/hero-ebook.jpg";
@@ -171,7 +171,7 @@ function Index() {
           <div>
             <img
               src={ebookOpen}
-              alt="Open pages of the Men's Performance Blueprint ebook"
+              alt="Open pages of the Men Ascend Performance Blueprint ebook showing the Energy Systems and Daily Discipline chapters"
               loading="lazy"
               width={1536}
               height={1024}
@@ -194,6 +194,7 @@ function Index() {
                 { icon: Brain, t: "Stress & Mental Clarity", d: "Evidence-based tools to calm the nervous system and sharpen decision-making." },
                 { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
                 { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and connection in your relationships." },
+                { icon: Flame, t: "Confidence & Intimacy", d: "Explore the lifestyle factors that can influence how confident, connected, and present you feel in intimate moments." },
               ].map(({ icon: I, t, d }) => (
                 <div key={t} className="flex gap-4 group">
                   <div className="shrink-0 w-11 h-11 rounded-xl bg-white border border-border grid place-items-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shadow-soft">
