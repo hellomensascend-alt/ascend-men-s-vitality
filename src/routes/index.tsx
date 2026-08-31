@@ -89,8 +89,12 @@ function Index() {
               The Men's <em className="not-italic text-primary">Performance</em> Blueprint
             </h1>
             <p className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-              A modern educational guide for men 45–60 who want to build lasting energy, focus, and confidence — through the daily habits that actually work.
+              A modern educational guide for men 45–60 who want to build lasting energy, focus, confidence, and a stronger sense of intimacy — through practical daily habits.
             </p>
+            <p className="mt-4 text-sm md:text-base text-secondary/70 leading-relaxed max-w-lg">
+              Because feeling like yourself again isn't only about how you move through the day — it's also about how you feel when it matters most.
+            </p>
+
             <div className="mt-7 md:mt-8">
               <CTA>Download Now — Only $39</CTA>
               <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
