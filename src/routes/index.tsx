@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   Download, Shield, Lock, Star, ChevronDown, ArrowRight,
   FileText, Smartphone, Tablet, Laptop, Check, BookOpen,
-  Sunrise, Utensils, Brain, Moon, Dumbbell, HeartPulse,
+  Sunrise, Utensils, Brain, Moon, Dumbbell, HeartPulse, Flame,
 } from "lucide-react";
 import { useState } from "react";
 import heroEbook from "@/assets/hero-ebook.jpg";
@@ -89,8 +89,12 @@ function Index() {
               The Men's <em className="not-italic text-primary">Performance</em> Blueprint
             </h1>
             <p className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-              A modern educational guide for men 45–60 who want to build lasting energy, focus, and confidence — through the daily habits that actually work.
+              A modern educational guide for men 45–60 who want to build lasting energy, focus, confidence, and a stronger sense of intimacy — through practical daily habits.
             </p>
+            <p className="mt-4 text-sm md:text-base text-secondary/70 leading-relaxed max-w-lg">
+              Because feeling like yourself again isn't only about how you move through the day — it's also about how you feel when it matters most.
+            </p>
+
             <div className="mt-7 md:mt-8">
               <CTA>Download Now — Only $39</CTA>
               <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
@@ -141,13 +145,25 @@ function Index() {
         <div className="mx-auto max-w-4xl text-center">
           <span className="text-primary text-xs md:text-sm font-semibold uppercase tracking-[0.2em]">Who It's For</span>
           <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">
-            For the man who's ready to feel like himself again.
+            For the man who's ready to feel like himself again — in every part of life, including intimacy.
           </h2>
-          <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Between 45 and 60, life stacks up. Work, stress, sleep debt, and inconsistent habits quietly drain the energy, focus, and confidence that used to feel automatic. This guide gives you a clear framework to get them back — one intentional day at a time.
-          </p>
+          <div className="mt-5 space-y-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p>
+              Between 45 and 60, life can start to feel different. Work, stress, poor sleep, inconsistent routines, and years of putting yourself last can gradually affect your energy, focus, confidence, and sense of connection.
+            </p>
+            <p>
+              The Men's Performance Blueprint was created as an educational roadmap for men who want to take a more intentional approach to their everyday habits, personal confidence, and intimate life.
+            </p>
+            <p>
+              Inside, you'll explore practical lifestyle principles designed to help you understand the connection between daily routines, overall well-being, confidence, and intimacy — without complicated routines or unrealistic promises.
+            </p>
+            <p>
+              This is about building better habits, understanding your body and lifestyle, and becoming more intentional about the man you want to be.
+            </p>
+          </div>
         </div>
       </section>
+
 
       {/* INSIDE THE EBOOK */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/40">
@@ -155,7 +171,7 @@ function Index() {
           <div>
             <img
               src={ebookOpen}
-              alt="Open pages of the Men's Performance Blueprint ebook"
+              alt="Open pages of the Men Ascend Performance Blueprint ebook showing the Energy Systems and Daily Discipline chapters"
               loading="lazy"
               width={1536}
               height={1024}
@@ -178,6 +194,7 @@ function Index() {
                 { icon: Brain, t: "Stress & Mental Clarity", d: "Evidence-based tools to calm the nervous system and sharpen decision-making." },
                 { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
                 { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and connection in your relationships." },
+                { icon: Flame, t: "Confidence & Intimacy", d: "Explore the lifestyle factors that can influence how confident, connected, and present you feel in intimate moments." },
               ].map(({ icon: I, t, d }) => (
                 <div key={t} className="flex gap-4 group">
                   <div className="shrink-0 w-11 h-11 rounded-xl bg-white border border-border grid place-items-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shadow-soft">
