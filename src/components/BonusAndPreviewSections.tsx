@@ -1,5 +1,6 @@
 import { Book, Calendar, Stethoscope, CheckCircle2, Sparkles, type LucideIcon } from "lucide-react";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CHECKOUT = STRIPE_CHECKOUT_URL;
 const GOLD = "#A8874E";
@@ -176,6 +177,7 @@ export function BonusPackageSection() {
 
           <a
             href={CHECKOUT}
+          onClick={trackInitiateCheckout}
             className="inline-block w-full rounded-xl py-3.5 font-bold text-sm tracking-wide uppercase transition-transform hover:scale-[1.02]"
             style={{ backgroundColor: GOLD, color: NAVY }}
           >

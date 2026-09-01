@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
 import { CheckCircle, ArrowRight, Download, Shield, FileText, Mail, Loader2, Lock } from "lucide-react";
 import { getDeliveryLink } from "@/lib/access.functions";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
+import { trackPurchaseOnce } from "@/lib/meta-pixel";
 
 export const Route = createFileRoute("/access")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -68,6 +70,11 @@ function AccessPage() {
     retry: false,
     queryFn: () => verify({ data: { sessionId: session_id! } }),
   });
+
+  // Purchase fires only after the server verified this Stripe session as paid.
+  useEffect(() => {
+    if (session_id && data?.ok) trackPurchaseOnce(session_id);
+  }, [session_id, data?.ok]);
 
   if (!session_id) return <LockedCard />;
 

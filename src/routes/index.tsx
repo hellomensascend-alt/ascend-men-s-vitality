@@ -4,7 +4,7 @@ import {
   FileText, Smartphone, Tablet, Laptop, Check, BookOpen,
   Sunrise, Utensils, Brain, Moon, Dumbbell, HeartPulse, Flame,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import heroEbook from "@/assets/hero-ebook.jpg";
 import ebookOpen from "@/assets/ebook-open.jpg";
 import bonusesImg from "@/assets/bonuses.jpg";
@@ -13,6 +13,7 @@ import lifeKitchen from "@/assets/lifestyle-kitchen.jpg";
 import lifeRead from "@/assets/lifestyle-read.jpg";
 import { InsideGuideSection, BonusPackageSection } from "@/components/BonusAndPreviewSections";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
+import { trackInitiateCheckout, trackViewContent } from "@/lib/meta-pixel";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,6 +47,7 @@ function CTA({ children = "Download Instantly", size = "lg", className = "" }: {
   return (
     <a
       href={CHECKOUT}
+      onClick={trackInitiateCheckout}
       className={`inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-primary text-primary-foreground font-semibold rounded-full shadow-cta hover:scale-[1.02] active:scale-[0.98] transition-all ${sizes} ${className}`}
     >
       <Download className="w-5 h-5" />
@@ -63,7 +65,7 @@ function Nav() {
           <div className="w-8 h-8 rounded-lg bg-secondary grid place-items-center text-primary-foreground font-serif font-bold">M</div>
           <span className="font-serif text-lg font-semibold tracking-tight text-secondary">Men Ascend</span>
         </a>
-        <a href={CHECKOUT} className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium hover:bg-secondary/90 transition-colors">
+        <a href={CHECKOUT} onClick={trackInitiateCheckout} className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium hover:bg-secondary/90 transition-colors">
           <Download className="w-4 h-4" /> Get the Ebook
         </a>
       </div>
@@ -72,6 +74,10 @@ function Nav() {
 }
 
 function Index() {
+  useEffect(() => {
+    trackViewContent();
+  }, []);
+
   return (
     <div id="top" className="min-h-screen bg-background">
       <Nav />
@@ -443,6 +449,7 @@ function Index() {
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-border px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
         <a
           href={CHECKOUT}
+          onClick={trackInitiateCheckout}
           className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-semibold text-base px-4 py-3.5 rounded-full shadow-cta active:scale-[0.98] transition-transform"
         >
           <Download className="w-5 h-5" /> Get It Now — $39
