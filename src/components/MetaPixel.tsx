@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { META_PIXEL_ID } from "@/lib/meta-pixel";
+import { META_PIXEL_ID, isTrackingHost } from "@/lib/meta-pixel";
 
 /**
  * Injects the Meta Pixel base code exactly once per page load.
@@ -9,6 +9,7 @@ import { META_PIXEL_ID } from "@/lib/meta-pixel";
  */
 export function MetaPixel() {
   useEffect(() => {
+    if (!isTrackingHost()) return; // previews/localhost never send events
     const w = window as unknown as { fbq?: unknown; _fbq?: unknown };
     if (w.fbq) return; // already initialized — never double-init
 
