@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { CheckCircle, ArrowRight, Download, Shield, FileText, Mail, Loader2, Lock } from "lucide-react";
 import { getDeliveryLink } from "@/lib/access.functions";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
-import { trackPurchaseOnce } from "@/lib/meta-pixel";
+import { trackPurchaseOnce, trackInitiateCheckout } from "@/lib/meta-pixel";
 
 export const Route = createFileRoute("/access")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -121,6 +121,7 @@ function LockedCard() {
           <div className="mt-8">
             <a
               href={STRIPE_CHECKOUT_URL}
+              onClick={trackInitiateCheckout}
               className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 text-base font-semibold rounded-full shadow-cta hover:scale-[1.02] active:scale-[0.98] transition-all text-white"
               style={{ backgroundColor: "#22C55E" }}
             >
