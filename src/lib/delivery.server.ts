@@ -13,7 +13,10 @@ type StripeSession = {
   id?: string;
   payment_status?: string;
   status?: string;
+  created?: number;
 };
+
+const SESSION_VALIDITY_SECONDS = 90 * 24 * 60 * 60;
 
 export async function verifyStripeSession(
   sessionId: string,
@@ -30,5 +33,14 @@ export async function verifyStripeSession(
 
   const session = (await res.json()) as StripeSession;
   const paid = session.payment_status === "paid" || session.status === "complete";
-  return { paid, reason: paid ? undefined : "unpaid" };
+  if (!paid) return { paid: false, reason: "unpaid" };
+
+  if (
+    typeof session.created === "number" &&
+    Date.now() / 1000 - session.created > SESSION_VALIDITY_SECONDS
+  ) {
+    return { paid: false, reason: "expired" };
+  }
+
+  return { paid: true };
 }
