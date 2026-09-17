@@ -22,13 +22,11 @@ function BonusCard({
   eyebrow,
   title,
   description,
-  value,
 }: {
   icon: LucideIcon;
   eyebrow: string;
   title: string;
   description: string;
-  value: string;
 }) {
   return (
     <div className="relative rounded-2xl bg-white shadow-[0_8px_30px_rgba(11,31,51,0.08)] border border-slate-100 p-6 flex flex-col gap-4 hover:shadow-[0_12px_40px_rgba(11,31,51,0.14)] transition-shadow duration-300">
@@ -47,12 +45,6 @@ function BonusCard({
         </h3>
       </div>
       <p className="text-sm text-slate-600 leading-relaxed flex-1">{description}</p>
-      <div className="flex items-center justify-between pt-3 border-t border-slate-100">
-        <span className="text-xs uppercase tracking-wide text-slate-400">Value</span>
-        <span className="text-base font-bold" style={{ color: NAVY }}>
-          {value}
-        </span>
-      </div>
     </div>
   );
 }
