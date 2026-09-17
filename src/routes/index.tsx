@@ -276,11 +276,11 @@ function Index() {
           <div className="text-center max-w-2xl mx-auto">
             <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">Included Bonus PDFs</span>
             <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">
-              Five additional guides. All digital. All yours.
+              Six additional guides. All digital. All yours.
             </h2>
           </div>
           <div className="mt-10 rounded-3xl overflow-hidden bg-muted/40 border border-border">
-            <img src={bonusesImg} alt="Five bonus ebook covers" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
+            <img src={bonusesImg} alt="Six bonus ebook covers" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
           </div>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
