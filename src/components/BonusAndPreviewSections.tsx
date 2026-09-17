@@ -1,4 +1,4 @@
-import { Book, Calendar, Stethoscope, CheckCircle2, Sparkles, type LucideIcon } from "lucide-react";
+import { Book, Gift, Smartphone, Download, Sparkles, type LucideIcon } from "lucide-react";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
