@@ -244,26 +244,26 @@ function Index() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* WHAT'S INSIDE */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-secondary text-secondary-foreground">
         <div className="mx-auto max-w-5xl text-center">
-          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">What Readers Are Saying</span>
+          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">What's Inside</span>
           <h2 className="mt-3 text-3xl md:text-5xl font-semibold leading-tight">
-            "The most practical wellness guide I've read in a decade."
+            Three chapters that shape the whole blueprint.
           </h2>
           <div className="mt-10 grid md:grid-cols-3 gap-5 text-left">
             {[
-              { n: "Reader feedback", t: "I stopped chasing hacks. The morning framework is simple enough to actually follow." },
-              { n: "Reader feedback", t: "It reads like a well-designed magazine and hits like a coach." },
-              { n: "Reader feedback", t: "Clear, honest, and beautifully made. It's the guide I wish someone had handed me earlier." },
-            ].map(({ n, t }) => (
-              <blockquote key={t} className="rounded-2xl bg-white/5 border border-white/10 p-6">
-                <div className="flex gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-primary text-primary" />)}
+              { icon: Sunrise, t: "The Morning Framework", d: "How to design a first hour that sets the tone for energy and focus." },
+              { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
+              { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and connection in your relationships." },
+            ].map(({ icon: I, t, d }) => (
+              <div key={t} className="rounded-2xl bg-white/5 border border-white/10 p-6">
+                <div className="w-10 h-10 rounded-lg bg-primary/20 grid place-items-center text-primary mb-4">
+                  <I className="w-5 h-5" />
                 </div>
-                <p className="text-white/90 text-sm md:text-base italic leading-relaxed">"{t}"</p>
-                <footer className="mt-4 text-xs font-semibold text-primary tracking-wide">{n}</footer>
-              </blockquote>
+                <h3 className="font-serif text-lg font-semibold text-white">{t}</h3>
+                <p className="mt-2 text-sm text-white/80 leading-relaxed">{d}</p>
+              </div>
             ))}
           </div>
         </div>
