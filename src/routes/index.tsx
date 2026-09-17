@@ -396,7 +396,7 @@ function Index() {
             Your next chapter starts <em className="not-italic text-primary">with one download.</em>
           </h2>
           <p className="mt-6 text-base md:text-lg text-white/75 max-w-xl mx-auto">
-            Join thousands of men rebuilding their energy, focus, and confidence — one intentional day at a time.
+            Build the energy, focus, and confidence you're after — one intentional day at a time.
           </p>
           <div className="mt-8 flex justify-center">
             <CTA>Get Access — Only $39</CTA>
