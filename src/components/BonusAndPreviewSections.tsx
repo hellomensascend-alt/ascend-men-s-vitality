@@ -1,4 +1,4 @@
-import { Book, Calendar, Stethoscope, CheckCircle2, Sparkles, type LucideIcon } from "lucide-react";
+import { Book, Gift, Smartphone, Download, Sparkles, type LucideIcon } from "lucide-react";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
@@ -22,13 +22,11 @@ function BonusCard({
   eyebrow,
   title,
   description,
-  value,
 }: {
   icon: LucideIcon;
   eyebrow: string;
   title: string;
   description: string;
-  value: string;
 }) {
   return (
     <div className="relative rounded-2xl bg-white shadow-[0_8px_30px_rgba(11,31,51,0.08)] border border-slate-100 p-6 flex flex-col gap-4 hover:shadow-[0_12px_40px_rgba(11,31,51,0.14)] transition-shadow duration-300">
@@ -47,12 +45,6 @@ function BonusCard({
         </h3>
       </div>
       <p className="text-sm text-slate-600 leading-relaxed flex-1">{description}</p>
-      <div className="flex items-center justify-between pt-3 border-t border-slate-100">
-        <span className="text-xs uppercase tracking-wide text-slate-400">Value</span>
-        <span className="text-base font-bold" style={{ color: NAVY }}>
-          {value}
-        </span>
-      </div>
     </div>
   );
 }
@@ -125,29 +117,25 @@ export function BonusPackageSection() {
             icon={Book}
             eyebrow="Main Guide"
             title="The Men's Performance Blueprint"
-            description="The complete, premium 40-chapter guide — science-based, practical, and built for real results."
-            value="$49"
+            description="The complete, premium 40-chapter guide."
           />
           <BonusCard
-            icon={Calendar}
-            eyebrow="Bonus #1"
-            title="30-Day Performance Action Plan"
-            description="A day-by-day plan to build healthier habits, boost daily energy, ease everyday stress, and grow long-term confidence."
-            value="$29"
+            icon={Gift}
+            eyebrow="Included"
+            title="6 Bonus PDF Guides & Workbooks"
+            description="The 30-Day Performance Challenge, Morning Performance Routine, Performance Habit Tracker, Confidence Building Workbook, Foods for All-Day Energy, and Blueprint Master Class Notes."
           />
           <BonusCard
-            icon={Stethoscope}
-            eyebrow="Bonus #2"
-            title="Personal Growth Journal"
-            description="A guided journal to organize your thoughts, track your progress, and set clear intentions for the month ahead."
-            value="$24"
+            icon={Smartphone}
+            eyebrow="Access"
+            title="Optimized for Any Device"
+            description="Mobile, tablet, and desktop — read anywhere."
           />
           <BonusCard
-            icon={CheckCircle2}
-            eyebrow="Bonus #3"
-            title="Wellness Checklist"
-            description="A printable weekly checklist covering nutrition, sleep, exercise, stress, hydration, and the habits that affect men's health."
-            value="$19"
+            icon={Download}
+            eyebrow="Delivery"
+            title="Instant Access"
+            description="No waiting. Your download link arrives immediately after checkout."
           />
         </div>
 
