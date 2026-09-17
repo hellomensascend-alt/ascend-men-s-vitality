@@ -337,7 +337,7 @@ function Index() {
                   <ul className="mt-6 space-y-2.5">
                     {[
                       "The Men's Performance Blueprint (120+ page PDF)",
-                      "5 Bonus PDF guides & workbooks",
+                      "6 Bonus PDF guides & workbooks",
                       "Optimized for mobile, tablet & desktop",
                       "Lifetime updates included",
                       "Instant delivery — no waiting",
