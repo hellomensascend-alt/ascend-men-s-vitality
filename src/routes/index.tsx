@@ -253,9 +253,9 @@ function Index() {
           </h2>
           <div className="mt-10 grid md:grid-cols-3 gap-5 text-left">
             {[
-              { icon: Sunrise, t: "The Morning Framework", d: "How to design a first hour that sets the tone for energy and focus." },
-              { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
-              { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and connection in your relationships." },
+              { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel steady, natural energy levels throughout the day." },
+              { icon: Dumbbell, t: "Movement That Compounds", d: "Simple training patterns proven to build strength after 35." },
+              { icon: Flame, t: "Confidence & Intimacy", d: "Explore the lifestyle factors that can influence how confident, connected, and present you feel in intimate moments." },
             ].map(({ icon: I, t, d }) => (
               <div key={t} className="rounded-2xl bg-white/5 border border-white/10 p-6">
                 <div className="w-10 h-10 rounded-lg bg-primary/20 grid place-items-center text-primary mb-4">
