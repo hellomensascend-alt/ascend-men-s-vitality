@@ -117,29 +117,25 @@ export function BonusPackageSection() {
             icon={Book}
             eyebrow="Main Guide"
             title="The Men's Performance Blueprint"
-            description="The complete, premium 40-chapter guide — science-based, practical, and built for real results."
-            value="$49"
+            description="The complete, premium 40-chapter guide."
           />
           <BonusCard
-            icon={Calendar}
-            eyebrow="Bonus #1"
-            title="30-Day Performance Action Plan"
-            description="A day-by-day plan to build healthier habits, boost daily energy, ease everyday stress, and grow long-term confidence."
-            value="$29"
+            icon={Gift}
+            eyebrow="Included"
+            title="6 Bonus PDF Guides & Workbooks"
+            description="The 30-Day Performance Challenge, Morning Performance Routine, Performance Habit Tracker, Confidence Building Workbook, Foods for All-Day Energy, and Blueprint Master Class Notes."
           />
           <BonusCard
-            icon={Stethoscope}
-            eyebrow="Bonus #2"
-            title="Personal Growth Journal"
-            description="A guided journal to organize your thoughts, track your progress, and set clear intentions for the month ahead."
-            value="$24"
+            icon={Smartphone}
+            eyebrow="Access"
+            title="Optimized for Any Device"
+            description="Mobile, tablet, and desktop — read anywhere."
           />
           <BonusCard
-            icon={CheckCircle2}
-            eyebrow="Bonus #3"
-            title="Wellness Checklist"
-            description="A printable weekly checklist covering nutrition, sleep, exercise, stress, hydration, and the habits that affect men's health."
-            value="$19"
+            icon={Download}
+            eyebrow="Delivery"
+            title="Instant Access"
+            description="No waiting. Your download link arrives immediately after checkout."
           />
         </div>
 
