@@ -134,7 +134,7 @@ function Index() {
       <section className="border-y border-border bg-muted/40">
         <div className="mx-auto max-w-6xl px-4 md:px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
           {[
-            { icon: Download, t: "Instant Download" },
+            { icon: Download, t: "Digital Download" },
             { icon: Lock, t: "Secure Checkout" },
             { icon: FileText, t: "PDF Included" },
             { icon: Tablet, t: "Any Device" },
