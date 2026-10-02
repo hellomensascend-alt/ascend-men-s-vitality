@@ -11,7 +11,7 @@ import bonusesImg from "@/assets/bonuses.jpg";
 import lifeWalk from "@/assets/lifestyle-walk.jpg";
 import lifeKitchen from "@/assets/lifestyle-kitchen.jpg";
 import lifeRead from "@/assets/lifestyle-read.jpg";
-import { InsideGuideSection, BonusPackageSection } from "@/components/BonusAndPreviewSections";
+import { InsideGuideSection } from "@/components/BonusAndPreviewSections";
 import { STRIPE_CHECKOUT_URL } from "@/lib/config";
 import { trackInitiateCheckout, trackViewContent } from "@/lib/meta-pixel";
 
@@ -66,7 +66,7 @@ function Nav() {
           <span className="font-serif text-lg font-semibold tracking-tight text-secondary">Men Ascend</span>
         </a>
         <a href={CHECKOUT} onClick={trackInitiateCheckout} className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium hover:bg-secondary/90 transition-colors">
-          <Download className="w-4 h-4" /> Get the Ebook
+          <Download className="w-4 h-4" /> Get the Blueprint
         </a>
       </div>
     </header>
@@ -89,22 +89,23 @@ function Index() {
         <div className="relative mx-auto max-w-6xl px-4 md:px-6 pt-10 md:pt-16 pb-12 md:pb-20 grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
           <div className="animate-slide-up">
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent border border-primary/20 text-xs font-semibold text-secondary uppercase tracking-wider">
-              <FileText className="w-3.5 h-3.5" /> Premium Digital Ebook
+              <FileText className="w-3.5 h-3.5" /> Digital Guide · 30-Day Blueprint
             </span>
-            <h1 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] text-secondary">
+            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.25em] text-primary">Men Ascend</p>
+            <h1 className="mt-2 text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] text-secondary">
               The Men's <em className="not-italic text-primary">Performance</em> Blueprint
             </h1>
             <p className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-              A modern educational guide for men 45–60 who want to build lasting energy, focus, confidence, and a stronger sense of intimacy — through practical daily habits.
+              A practical educational guide for men who want to build a more consistent routine of energy, focus, movement, sleep, nutrition and confidence through structured daily habits.
             </p>
-            <p className="mt-4 text-sm md:text-base text-secondary/70 leading-relaxed max-w-lg">
-              Because feeling like yourself again isn't only about how you move through the day — it's also about how you feel when it matters most.
+            <p className="mt-4 text-sm md:text-base font-semibold text-secondary">
+              120+ pages + practical tools + 30-day challenge · <span className="text-primary">$39 USD</span>
             </p>
 
             <div className="mt-7 md:mt-8">
-              <CTA>Download Now — Only $39</CTA>
+              <CTA>GET THE 30-DAY BLUEPRINT — $39</CTA>
               <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
-                <Lock className="w-3.5 h-3.5" /> Secure checkout · Instant PDF delivery
+                <Lock className="w-3.5 h-3.5" /> Secure checkout · Digital access after purchase
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-secondary/80">
@@ -133,7 +134,7 @@ function Index() {
       <section className="border-y border-border bg-muted/40">
         <div className="mx-auto max-w-6xl px-4 md:px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
           {[
-            { icon: Download, t: "Instant Download" },
+            { icon: Download, t: "Digital Download" },
             { icon: Lock, t: "Secure Checkout" },
             { icon: FileText, t: "PDF Included" },
             { icon: Tablet, t: "Any Device" },
@@ -146,30 +147,23 @@ function Index() {
         </div>
       </section>
 
-      {/* WHO IT'S FOR */}
+      {/* PROBLEM: MOTIVATION -> STRUCTURE */}
       <section className="py-16 md:py-24 px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="text-primary text-xs md:text-sm font-semibold uppercase tracking-[0.2em]">Who It's For</span>
+          <span className="text-primary text-xs md:text-sm font-semibold uppercase tracking-[0.2em]">Why a Blueprint</span>
           <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">
-            For the man who's ready to feel like himself again — in every part of life, including intimacy.
+            Most people don't need another burst of motivation. They need a structure they can actually follow.
           </h2>
-          <div className="mt-5 space-y-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            <p>
-              Between 45 and 60, life can start to feel different. Work, stress, poor sleep, inconsistent routines, and years of putting yourself last can gradually affect your energy, focus, confidence, and sense of connection.
-            </p>
-            <p>
-              The Men's Performance Blueprint was created as an educational roadmap for men who want to take a more intentional approach to their everyday habits, personal confidence, and intimate life.
-            </p>
-            <p>
-              Inside, you'll explore practical lifestyle principles designed to help you understand the connection between daily routines, overall well-being, confidence, and intimacy — without complicated routines or unrealistic promises.
-            </p>
-            <p>
-              This is about building better habits, understanding your body and lifestyle, and becoming more intentional about the man you want to be.
-            </p>
+          <div className="mt-8 flex items-center justify-center gap-4 font-serif text-xl md:text-3xl font-semibold">
+            <span className="text-muted-foreground line-through decoration-primary/60">MOTIVATION</span>
+            <ArrowRight className="w-6 h-6 text-primary" />
+            <span className="text-secondary">STRUCTURE</span>
           </div>
+          <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+            Men Ascend turns core lifestyle fundamentals into a practical daily framework covering mornings, nutrition, movement, stress, sleep, confidence and connection.
+          </p>
         </div>
       </section>
-
 
       {/* INSIDE THE EBOOK */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/40">
@@ -185,22 +179,21 @@ function Index() {
             />
           </div>
           <div>
-            <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">Inside the Ebook</span>
+            <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">Inside the Blueprint</span>
             <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary leading-tight">
               120+ pages of clear, actionable frameworks.
             </h2>
             <p className="mt-4 text-muted-foreground text-base md:text-lg">
-              Written and edited to the standard of a premium American wellness publication. No fluff — just the habits, protocols, and mindsets shaping modern men's health.
+              Six core modules, each focused on one area of your daily routine.
             </p>
             <div className="mt-8 space-y-4">
               {[
-                { icon: Sunrise, t: "The Morning Framework", d: "How to design a first hour that sets the tone for energy and focus." },
-                { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel steady, natural energy levels throughout the day." },
-                { icon: Dumbbell, t: "Movement That Compounds", d: "Simple training patterns proven to build strength after 35." },
-                { icon: Brain, t: "Stress & Mental Clarity", d: "Evidence-based tools to calm the nervous system and sharpen decision-making." },
-                { icon: Moon, t: "The Sleep Protocol", d: "The bedtime routine used by high-performers for deep, restorative rest." },
-                { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits that rebuild self-trust and connection in your relationships." },
-                { icon: Flame, t: "Confidence & Intimacy", d: "Explore the lifestyle factors that can influence how confident, connected, and present you feel in intimate moments." },
+                { icon: Sunrise, t: "The Morning Framework", d: "How to design a consistent first hour of the day." },
+                { icon: Utensils, t: "Nutrition Fundamentals", d: "Everyday food choices organized into simple, repeatable habits." },
+                { icon: Dumbbell, t: "Movement That Compounds", d: "Simple movement patterns you can fit into a regular week." },
+                { icon: Brain, t: "Stress & Mental Clarity", d: "Practical habits for managing daily stress and staying focused." },
+                { icon: Moon, t: "The Sleep Protocol", d: "A structured evening routine to support consistent rest." },
+                { icon: HeartPulse, t: "Confidence & Connection", d: "Daily habits around self-trust, relationships and intimacy." },
               ].map(({ icon: I, t, d }) => (
                 <div key={t} className="flex gap-4 group">
                   <div className="shrink-0 w-11 h-11 rounded-xl bg-white border border-border grid place-items-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shadow-soft">
@@ -244,23 +237,22 @@ function Index() {
         </div>
       </section>
 
-      {/* WHAT'S INSIDE */}
+      {/* HOW IT WORKS */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-secondary text-secondary-foreground">
-        <div className="mx-auto max-w-5xl text-center">
-          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">What's Inside</span>
+        <div className="mx-auto max-w-6xl text-center">
+          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">The Method</span>
           <h2 className="mt-3 text-3xl md:text-5xl font-semibold leading-tight">
-            Three chapters that shape the whole blueprint.
+            How the 30-Day Blueprint Works
           </h2>
-          <div className="mt-10 grid md:grid-cols-3 gap-5 text-left">
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
             {[
-              { icon: Utensils, t: "Nutrition Fundamentals", d: "Foods that fuel steady, natural energy levels throughout the day." },
-              { icon: Dumbbell, t: "Movement That Compounds", d: "Simple training patterns proven to build strength after 35." },
-              { icon: Flame, t: "Confidence & Intimacy", d: "Explore the lifestyle factors that can influence how confident, connected, and present you feel in intimate moments." },
-            ].map(({ icon: I, t, d }) => (
-              <div key={t} className="rounded-2xl bg-white/5 border border-white/10 p-6">
-                <div className="w-10 h-10 rounded-lg bg-primary/20 grid place-items-center text-primary mb-4">
-                  <I className="w-5 h-5" />
-                </div>
+              { n: "01", t: "Build Your Morning", d: "Establish a consistent starting routine." },
+              { n: "02", t: "Strengthen the Fundamentals", d: "Work through nutrition, movement, sleep and stress-management habits." },
+              { n: "03", t: "Track the Habits", d: "Use the included trackers and practical worksheets." },
+              { n: "04", t: "Complete the 30-Day Challenge", d: "Turn the framework into a repeatable daily routine." },
+            ].map(({ n, t, d }) => (
+              <div key={n} className="rounded-2xl bg-white/5 border border-white/10 p-6">
+                <p className="font-serif text-2xl font-semibold text-primary mb-3">{n}</p>
                 <h3 className="font-serif text-lg font-semibold text-white">{t}</h3>
                 <p className="mt-2 text-sm text-white/80 leading-relaxed">{d}</p>
               </div>
@@ -269,32 +261,33 @@ function Index() {
         </div>
       </section>
 
-
       {/* BONUSES */}
       <section className="py-16 md:py-24 px-4 md:px-6">
         <div className="mx-auto max-w-6xl">
           <div className="text-center max-w-2xl mx-auto">
-            <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">Included Bonus PDFs</span>
+            <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">What You Get</span>
             <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">
-              Six additional guides. All digital. All yours.
+              The Men's Performance Blueprint
             </h2>
+            <p className="mt-3 text-muted-foreground text-base md:text-lg">120+ page digital guide — plus six bonus resources:</p>
           </div>
           <div className="mt-10 rounded-3xl overflow-hidden bg-muted/40 border border-border">
-            <img src={bonusesImg} alt="Six bonus ebook covers" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
+            <img src={bonusesImg} alt="Illustrative mockup of the six bonus covers (not actual page captures)" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
           </div>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { t: "The 30-Day Performance Challenge", d: "A day-by-day plan to reset your energy and focus." },
-              { t: "Foods for All-Day Energy", d: "A pocket guide to the foods that support steady, natural energy." },
-              { t: "The Morning Performance Routine", d: "A 20-minute ritual that primes body and mind." },
-              { t: "The Performance Habit Tracker", d: "A printable tracker to keep your streak visible." },
-              { t: "The Confidence Building Workbook", d: "Guided exercises to rebuild self-trust week by week." },
-              { t: "The Blueprint Master Class Notes", d: "Distilled notes from the core lessons — read in 15 minutes." },
-            ].map(({ t, d }) => (
+              { t: "30-Day Performance Challenge", d: "A structured daily framework to help organize the habits covered in the blueprint." },
+              { t: "Foods for All-Day Energy", d: "An educational reference of everyday foods to use when planning meals." },
+              { t: "Morning Performance Routine", d: "A step-by-step outline to follow when setting up your mornings." },
+              { t: "Performance Habit Tracker", d: "Use the tracker to keep your daily habits visible and consistent." },
+              { t: "Confidence Building Workbook", d: "Written exercises to reflect on and plan your confidence habits." },
+              { t: "Blueprint Master Class Notes", d: "A condensed summary of the core lessons for quick review." },
+            ].map(({ t, d }, i) => (
               <div key={t} className="p-6 rounded-2xl bg-white border border-border shadow-soft hover:shadow-elev hover:-translate-y-1 transition-all">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 grid place-items-center text-primary mb-4">
                   <BookOpen className="w-5 h-5" />
                 </div>
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider">Bonus 0{i + 1}</p>
                 <h3 className="font-serif text-lg font-semibold text-secondary">{t}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{d}</p>
                 <p className="mt-4 text-xs font-semibold text-primary uppercase tracking-wider flex items-center gap-1.5">
@@ -308,7 +301,6 @@ function Index() {
 
       {/* INSIDE THE GUIDE + BONUS PACKAGE */}
       <InsideGuideSection />
-      <BonusPackageSection />
 
 
       {/* OFFER */}
@@ -316,11 +308,11 @@ function Index() {
         <div className="mx-auto max-w-3xl">
           <div className="text-center mb-8">
             <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">The Complete Package</span>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">One download. Everything included.</h2>
+            <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-secondary leading-tight">One blueprint. Everything included.</h2>
           </div>
           <div className="rounded-3xl overflow-hidden border border-border bg-white shadow-elev">
             <div className="bg-secondary text-white text-center py-3 font-semibold text-sm tracking-wide uppercase">
-              Launch Offer — 68% Off
+              The Men's Performance Blueprint
             </div>
             <div className="p-6 md:p-10">
               <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -328,19 +320,17 @@ function Index() {
                   <img src={heroEbook} alt="Complete package" loading="lazy" width={1536} height={1024} className="w-full h-auto" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground line-through">Total value $121</p>
-                  <div className="mt-1 flex items-baseline gap-2">
+                  <div className=" flex items-baseline gap-2">
                     <span className="font-serif text-5xl md:text-6xl font-semibold text-secondary">$39</span>
                     <span className="text-lg text-muted-foreground">USD</span>
                   </div>
-                  <p className="mt-1 text-sm text-muted-foreground">One-time payment · Lifetime access</p>
+                  <p className="mt-1 text-sm text-muted-foreground">One-time purchase</p>
                   <ul className="mt-6 space-y-2.5">
                     {[
-                      "The Men's Performance Blueprint (120+ page PDF)",
-                      "6 Bonus PDF guides & workbooks",
-                      "Optimized for mobile, tablet & desktop",
-                      "Lifetime updates included",
-                      "Instant delivery — no waiting",
+                      "120+ pages",
+                      "Practical tools",
+                      "30-day challenge",
+                      "6 bonuses",
                     ].map((b) => (
                       <li key={b} className="flex items-start gap-2 text-sm md:text-base text-secondary/90">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -349,21 +339,33 @@ function Index() {
                     ))}
                   </ul>
                   <div className="mt-8">
-                    <CTA>Get Instant Access — Only $39</CTA>
+                    <CTA>GET THE BLUEPRINT</CTA>
+                    <p className="mt-3 text-xs text-muted-foreground">Digital access after purchase.</p>
                   </div>
                 </div>
               </div>
               <div className="mt-8 p-5 rounded-2xl bg-accent/40 border border-primary/20 flex items-start gap-4">
                 <Shield className="w-8 h-8 text-primary shrink-0" />
                 <div>
-                  <p className="font-serif text-lg font-semibold text-secondary">30-Day Satisfaction Guarantee</p>
+                  <p className="font-serif text-lg font-semibold text-secondary">30-Day Guarantee</p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Read the entire guide. If it doesn't deliver the clarity and value you expected, email us for a full refund — no questions asked.
+                    Take 30 days to review the material. If it isn't right for you, request a refund according to our refund policy.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* WHO IS MEN ASCEND FOR */}
+      <section className="py-16 md:py-20 px-4 md:px-6">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em]">Purpose</span>
+          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-secondary">Who Is Men Ascend For?</h2>
+          <p className="mt-5 text-base md:text-lg text-muted-foreground">
+            Men Ascend is an educational project created for men aged 45–60 who want a clear, structured way to organize everyday lifestyle habits — mornings, nutrition, movement, stress, sleep, confidence and connection. It is not medical advice and does not replace a healthcare professional.
+          </p>
         </div>
       </section>
 
@@ -376,13 +378,13 @@ function Index() {
           </div>
           <div className="space-y-3">
             {[
-              { q: "Is this a physical product?", a: "No. Men Ascend is a 100% digital educational guide. You receive an instant PDF download after checkout — nothing ships to your home." },
-              { q: "What format is the ebook?", a: "A high-quality PDF designed for comfortable reading on smartphone, tablet, laptop, or desktop. You can also print it if you prefer." },
-              { q: "How quickly do I get access?", a: "Immediately. As soon as your payment is confirmed, your download links are delivered to your email." },
-              { q: "Who is this guide for?", a: "It's written specifically for men between 45 and 60 who want a clear, sustainable framework for wellness, energy, and confidence." },
-              { q: "Is this a medical treatment?", a: "No. This is an educational guide for informational purposes only. It is not intended to diagnose, treat, cure, or prevent any disease." },
-              { q: "What if I don't find it useful?", a: "You're covered by our 30-day satisfaction guarantee. Email support within 30 days for a full refund." },
-              { q: "Can I read it on my phone?", a: "Yes. The PDF is optimized for mobile, tablet, and desktop." },
+              { q: "What exactly do I receive?", a: "The Men's Performance Blueprint (a 120+ page digital guide) plus six bonus resources: the 30-Day Performance Challenge, Foods for All-Day Energy, Morning Performance Routine, Performance Habit Tracker, Confidence Building Workbook and Blueprint Master Class Notes." },
+              { q: "Is this a physical book?", a: "No. Everything is digital. Nothing is shipped to your home." },
+              { q: "How do I access the blueprint?", a: "After checkout you are taken to an access page. Once your payment is confirmed, it gives you the link to the digital files, which you can open on phone, tablet or computer." },
+              { q: "How many pages does it include?", a: "The main guide has more than 120 pages. The six bonuses are separate files." },
+              { q: "What are the bonuses?", a: "30-Day Performance Challenge, Foods for All-Day Energy, Morning Performance Routine, Performance Habit Tracker, Confidence Building Workbook and Blueprint Master Class Notes." },
+              { q: "Is this medical advice?", a: "No. This is an educational guide for informational purposes only. It is not intended to diagnose, treat, cure, or prevent any disease." },
+              { q: "What is the refund policy?", a: "You have 30 days to review the material. If it isn't right for you, you can request a refund according to our refund policy." },
             ].map((f, i) => <FaqItem key={i} q={f.q} a={f.a} />)}
           </div>
         </div>
@@ -393,17 +395,17 @@ function Index() {
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_white,_transparent_50%)]" />
         <div className="relative mx-auto max-w-3xl">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05]">
-            Your next chapter starts <em className="not-italic text-primary">with one download.</em>
+            Ready to build a more <em className="not-italic text-primary">consistent daily routine?</em>
           </h2>
           <p className="mt-6 text-base md:text-lg text-white/75 max-w-xl mx-auto">
-            Build the energy, focus, and confidence you're after — one intentional day at a time.
+            You get access to the digital blueprint and its complementary materials for a one-time $39.
           </p>
           <div className="mt-8 flex justify-center">
-            <CTA>Get Access — Only $39</CTA>
+            <CTA>GET THE 30-DAY BLUEPRINT — $39</CTA>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white/60">
             <span className="flex items-center gap-1.5"><Lock className="w-3.5 h-3.5" /> Secure Checkout</span>
-            <span className="flex items-center gap-1.5"><Download className="w-3.5 h-3.5" /> Instant Digital Download</span>
+            <span className="flex items-center gap-1.5"><Download className="w-3.5 h-3.5" /> Digital Access</span>
             <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5" /> 30-Day Guarantee</span>
           </div>
         </div>
@@ -419,14 +421,19 @@ function Index() {
                 <span className="font-serif text-lg font-semibold text-secondary">Men Ascend</span>
               </div>
               <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-                Modern, editorial-quality wellness guides for men who want to build a stronger everyday life.
+                Educational lifestyle guides for men who want a more structured everyday routine.
               </p>
+              <ul className="mt-3 space-y-1 text-xs text-muted-foreground">
+                <li>Owner / responsible party: [PENDENTE — a ser fornecido pelo proprietário]</li>
+                <li>Support email: [PENDENTE — a ser fornecido pelo proprietário]</li>
+                <li>Refund policy · Terms · Privacy: [PENDENTE — a ser fornecido pelo proprietário]</li>
+              </ul>
             </div>
             <div>
               <p className="text-xs font-semibold text-secondary uppercase tracking-wider">Product Details</p>
               <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Digital Product</li>
-                <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Instant Access</li>
+                <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Digital Access</li>
                 <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Educational Guide</li>
                 <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Not a Physical Product</li>
               </ul>
@@ -452,7 +459,7 @@ function Index() {
           onClick={trackInitiateCheckout}
           className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-semibold text-base px-4 py-3.5 rounded-full shadow-cta active:scale-[0.98] transition-transform"
         >
-          <Download className="w-5 h-5" /> Get It Now — $39
+          <Download className="w-5 h-5" /> Get the 30-Day Blueprint — $39
           <ArrowRight className="w-4 h-4 opacity-80" />
         </a>
       </div>
