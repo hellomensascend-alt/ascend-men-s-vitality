@@ -8,5 +8,8 @@
 
 export const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/cNi7sK1xheOefXNeiqfbq00";
 
+// Placeholder only. The Control Reset does not have a verified checkout yet.
+export const CONTROL_RESET_CHECKOUT_URL = "#";
+
 // The ebook delivery link is intentionally NOT here: it lives server-side only
 // in src/lib/delivery.server.ts and is released after Stripe payment verification.

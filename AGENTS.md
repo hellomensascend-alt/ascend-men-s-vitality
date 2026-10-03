@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep product landing pages route-isolated and scope product-specific visual variables to a wrapper class so existing product themes remain unaffected.
